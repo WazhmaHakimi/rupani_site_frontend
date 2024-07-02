@@ -1,0 +1,66 @@
+.mission-and-value {
+    background-color: #f1f7f4;
+}
+
+.mission-and-value .banner img {
+    width: 100%;
+    height: auto;
+}
+
+.mission-and-value .content {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission-and-value .content .contents{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.mission-and-value .content .contents .content-text {
+    text-align: left !important;
+    padding-left: 0;
+    margin: 0 !important;
+
+}
+
+.mission-and-value .content .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-and-value .content .image img {
+    width: 230px;
+    height: auto;   
+}
+
+@media (max-width: 767px){
+    .mission-and-value .content {
+        flex-direction: column !important;
+    }
+
+    .mission-and-value .content .contents{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .mission-and-value .content .image {
+        width: 100%;
+    }
+
+    .mission-and-value .content {
+        width: 90%;
+        margin: 0 5%;
+    }
+}

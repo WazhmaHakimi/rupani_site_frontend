@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+:root {
+    --tw-bg-opacity: 1;
+    --main-color: rgb(203 150 44 / var(--tw-bg-opacity));
+    --gray-color: rgba(110, 113, 145, 0.532);
+    --green-color: rgb(0 109 54);
+    --bg-color: #f1f7f4;
+    --black-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Webkit-based browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the entire scrollbar */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the tracking area */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scroll thumb */
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color of the scroll thumb on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+    padding-top: 125px !important;
+}
+
+@media(max-width: 767px) {
+    .content {
+        padding-top: 50px !important;
+    }
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h2 {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    line-height: 2.5rem !important;
+}
+
+@media(max-width: 767px) {
+    h2 {
+        font-size: 20px !important;
+    }
+}
+
+.yellow-link {
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 0 5px !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+}
+
+.yellow-link:hover {
+    border-bottom: 1.5px solid var(--main-color)
+}
+
+.yellow-text {
+    color: var(--main-color);
+}
+
+.gray-text {
+    color: var(--gray-color);
+}
+
+.green-text {
+    color: var(--green-color);
+}
+
+.black-text {
+    color: var(--black-color);
+}
+
+/* Button */
+.btn-yellow {
+    text-decoration: none;
+    background-color: rgb(203 150 44);
+    color: white;
+    padding: .50rem .9rem;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: transparent;
+    font-weight: 700;
+    font-size: .85vw;
+    text-transform: uppercase;
+}
+
+.btn-yellow:hover {
+    background-color: white;
+    border: 1px solid rgb(203 150 44);
+    color: rgb(203 150 44);
+}
+
+.btn-yellow-inverse {
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--main-color);
+    padding: .50rem .9rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: .85vw;
+    text-transform: uppercase;
+    border: 1px solid var(--main-color);
+}
+
+.btn-yellow-inverse:hover {
+    background-color: var(--main-color);
+    color: #fff;
 }

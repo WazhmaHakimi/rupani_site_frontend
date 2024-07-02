@@ -1,0 +1,96 @@
+.humanitarian-box {
+    background-color: var(--bg-color);
+}
+
+.humanitarian-box .banner img{
+    width: 100%;
+}
+
+.humanitarian-box .banner .intro-text {
+    background-color: var(--green-color);
+}
+
+.humanitarian-box .banner .intro-text p {
+    padding: 1rem 15%;
+}
+
+.humanitarian-box .humanitarian-data{
+    width: 80%;
+    margin: 0 10%;
+    color: var(--gray-color)
+}
+
+.humanitarian-box .humanitarian-data h2 {
+    margin-bottom: 0;
+}
+
+.humanitarian-box .humanitarian-data .humanitarian-p {
+    width: 90%;
+}
+
+.humanitarian-box .humanitarian-data .flex-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.humanitarian-box .humanitarian-data .flex-box .humanitarian-text {
+    width: 51%;
+}
+
+.humanitarian-box .humanitarian-data .flex-box .humanitarian-image {
+    width: 35%;
+}
+
+.humanitarian-box .humanitarian-data .flex-box .humanitarian-image img {
+    width: 100%;
+}
+
+.humanitarian-box .humanitarian-data .flex-box .humanitarian-text li {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .humanitarian-box .humanitarian-data .flex-box {
+        flex-direction: column;
+    }
+    
+    .humanitarian-box .humanitarian-data .flex-box .humanitarian-text {
+        width: 100%;
+    }
+    
+    .humanitarian-box .humanitarian-data .flex-box .humanitarian-image {
+        width: 100%;
+    }
+}
+
+.humanitarian-box .humanitarian-data .humanitarian-video {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.humanitarian-box .humanitarian-data .humanitarian-video a img {
+    width: 100%
+}
+
+.humanitarian-box .humanitarian-data .humanitarian-video a {
+    text-decoration: none;
+    width: 30%;
+    color: var(--green-color);
+}
+
+.humanitarian-box .humanitarian-data .humanitarian-video a:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+    .humanitarian-box .humanitarian-data .humanitarian-video {
+        flex-direction: column;
+    }
+    
+    .humanitarian-box .humanitarian-data .humanitarian-video a {
+        width: 100%;
+    }
+}

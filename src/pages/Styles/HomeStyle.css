@@ -1,0 +1,272 @@
+.carousel-container {
+  position: relative;
+}
+
+.carousel-text-overlay {
+  position: absolute;
+  left: 3rem;
+  bottom: 2rem;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  z-index: 1;
+  pointer-events: none; 
+}
+
+.carousel-caption {
+  left: 3rem !important;
+  bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .carousel-text-overlay {
+    font-size: 0.75rem !important;
+    bottom: 35%;
+  }
+}
+
+@media (min-width: 768px) {
+  .multiple-card-slider .card img {
+    height: 200px;
+  }
+}
+
+.container {
+  width: 75%;
+  margin-left: 12% !important;
+  margin-right: 12% !important;
+}
+
+.index-body {
+  background-color: var(--bg-color);
+}
+
+/* About Text */
+.about-text {
+  text-align: center !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  padding: 0 3%;
+  border-left: 1.75rem solid var(--main-color);
+  font-weight: 400;
+}
+
+/* About Us Home page */
+
+.card {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  border: none;
+  width: 93%;
+}
+
+.card img {
+  width: 100%;
+  border: none
+}
+
+.intro {
+  height: 40px;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: rgba(96, 96, 92, 0.5);
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: .4s;
+  border-radius: 0 0 20px 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.intro:hover {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.what-we-do {
+  display: grid;
+  direction: row;
+}
+
+
+.row.about-cards {
+  display: flex;
+  gap: 1.5rem 0rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* What is new Section */
+
+.carousel-control-next {
+  left: 10%;
+}
+
+.multiple-card-slider .carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: var(--main-color);
+  opacity: 1 !important;
+  width: 1.8rem !important;
+  height: 1.8rem !important;
+  padding: 5px !important;
+  border-radius: 9999px;
+  border-radius: 50%;
+  top: 100%;
+  transform: translateY(0%);
+  margin-top: 6%;
+}
+
+.images-slider .card {
+  margin: 0 0.2em;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1) !important;
+  border: none;
+  width: 95% !important;
+  color: rgb(55 65 81);
+}
+
+.images-slider .card img {
+  border-radius: 0;
+}
+
+.images-slider .card .card-body {
+  padding: 20px 10px !important;
+  font-size: 1rem !important;
+}
+
+.images-slider .card .card-text {
+  font-weight: 400;
+}
+
+.images-slider .card .date {
+  font-weight: 600;
+}
+
+.custom-timeline {
+  --tw-bg-opacity: 1;
+  border-bottom: 2.5px solid rgb(75 85 99 / var(--tw-bg-opacity));
+  margin: 6% 2% 0 18%;
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .custom-timeline {
+    display: none;
+  }
+}
+
+.time-line-row {
+  margin: 0 1%;
+}
+
+
+.carousel-control {
+  width: 4%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  margin-left: 15px;
+  background-image: none;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .active.left {
+    left: -100%;
+  }
+
+  .carousel-inner .next {
+    left: 100%;
+  }
+
+  .carousel-inner .prev {
+    left: -100%;
+  }
+
+  .active>div {
+    display: none;
+  }
+
+  .active>div:first-child {
+    display: block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .carousel-inner .active.left {
+    left: -50%;
+  }
+
+  .carousel-inner .next {
+    left: 50%;
+  }
+
+  .carousel-inner .prev {
+    left: -50%;
+  }
+
+  .active>div {
+    display: none;
+  }
+
+  .active>div:first-child {
+    display: block;
+  }
+
+  .active>div:first-child+div {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-inner .active.left {
+    left: -16.7%;
+  }
+
+  .carousel-inner .next {
+    left: 16.7%;
+  }
+
+  .carousel-inner .prev {
+    left: -16.7%;
+  }
+}
+
+/* Subscribe Styles */
+.subscribe {
+  border: 2px solid var(--main-color)
+}
+
+.subscribe input {
+  background-color: rgb(220 252 231);
+  background-image: url('../Images/input-gmail.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border: 1px solid var(--main-color);
+  width: 100%;
+}
+
+.subscribe input:focus {
+  outline: none;
+  outline: 2px solid var(--main-color);
+}

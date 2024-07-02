@@ -1,0 +1,68 @@
+.team {
+    background-color: #f1f7f4;
+}
+.team-datas {
+    margin: 0 20%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    flex-wrap: wrap; /* This will wrap the child elements to the next line */
+    justify-content: center;
+    align-items: center;
+}
+
+.team-data {
+    height: 100%;
+    width: 100%; /* This will make 4 elements per row */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (width : 768px){
+    .team-data img {
+        height: 220px !important;
+    }
+
+    .team-datas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width : 767px){
+    .team-data {
+        width:100%;
+    }
+
+    .team-datas {
+        margin: 0 5%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* This will wrap the child elements to the next line */
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+
+    .team-data img {
+        height: auto !important;
+        width: 100%;
+    }
+}
+
+.team-data img {
+    width: 95%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.team-data h2 {
+    font-size: 13px !important;
+    /* line-height: 1.5rem; */
+}
+
+.team-data h3 {
+    font-size: 14px;
+    color: rgba(110, 113, 145, 0.532);
+    font-weight: 600 !important;
+}

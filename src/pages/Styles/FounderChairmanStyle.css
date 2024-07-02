@@ -1,0 +1,133 @@
+.founder-chairman {
+    background-color: var(--bg-color);
+}
+
+.founder-chairman .banner img{
+    width: 100%
+}
+
+.founder-chairman .content {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.founder-chairman .content .founder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.founder-chairman .founder h2 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    line-height: 1.2rem !important;
+}
+
+.founder-chairman .founder .founder-data {
+    width: 59%;
+}
+
+.founder-chairman .founder .founder-image {
+    width: 37%;
+}
+
+.founder-chairman .founder .founder-image img {
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .founder-chairman .content {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .founder-chairman .content .founder {
+        flex-direction: column;
+    }
+
+    .founder-chairman .founder .founder-data {
+        width: 100%;
+    }
+
+    .founder-chairman .founder .founder-image {
+        width: 100%;
+    }
+}
+
+.founder-chairman .services {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 2rem;
+}
+
+.founder-chairman .services .services-image {
+    width: 28%;
+}
+
+.founder-chairman .services .services-image img {
+    width: 100%;
+}
+
+.founder-chairman .services .services-data {
+    width: 65%;
+    line-height: 2rem;
+}
+@media (max-width: 767px){
+    .founder-chairman .services {
+        flex-direction: column;
+    }
+    .founder-chairman .services .services-image {
+        width: 100%;
+    }
+    
+    .founder-chairman .services .services-data {
+        width: 100%;
+    }
+}
+
+.founder-chairman .awards .award-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.founder-chairman .awards .award-box .award-text {
+    width: 64%;
+}
+
+.founder-chairman .awards .award-box .award-text ul li {
+    padding-bottom: 1rem;
+}
+
+.founder-chairman .awards .award-box .award-image {
+    width: 35%;
+}
+
+.founder-chairman .awards .award-box .award-image img {
+    width: 100%;
+}
+
+@media(max-width: 767px){
+    .founder-chairman .awards .award-box {
+        flex-direction: column;
+    }
+    
+    .founder-chairman .awards .award-box .award-text {
+        width: 100%;
+    }
+    
+    .founder-chairman .awards .award-box .award-text ul li {
+        padding-bottom: 0.5rem;
+    }
+    
+    .founder-chairman .awards .award-box .award-image {
+        width: 100%;
+    }
+}

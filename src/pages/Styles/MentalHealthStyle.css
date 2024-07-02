@@ -1,0 +1,94 @@
+.mental-health {
+    background-color: var(--bg-color);
+}
+
+.mental-health p {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.mental-health .banner img{
+    width: 100%;
+}
+
+.mental-health .banner .intro-text {
+    background-color: var(--green-color);
+}
+
+.mental-health .banner .intro-text p {
+    padding: 1rem 10%;
+}
+
+.mental-health .mental-health-box{
+    padding: 0 10%;
+    color: var(--gray-color);
+}
+
+.mental-health .mental-health-box .flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mental-health .mental-health-box .flex-box .mental-health-text {
+    width: 55%
+}
+
+.mental-health .mental-health-box .flex-box .mental-health-image {
+    width: 42%;
+}
+
+.mental-health .mental-health-box .flex-box .mental-health-image img {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .mental-health .mental-health-box{
+        padding: 0 5%;
+    }
+
+    .mental-health .mental-health-box .flex-box {
+        flex-direction: column;
+    }
+    
+    .mental-health .mental-health-box .flex-box .mental-health-text {
+        width: 100%
+    }
+    
+    .mental-health .mental-health-box .flex-box .mental-health-image {
+        width: 100%;
+    }
+}
+
+.mental-health .helpline {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mental-health .helpline .helpline-text {
+    width: 60%;
+}
+
+.mental-health .helpline .helpline-image {
+    width: 35%;
+}
+
+.mental-health .helpline .helpline-image img{
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    .mental-health .helpline {
+        flex-direction: column;
+    }
+    
+    .mental-health .helpline .helpline-text {
+        width: 100%;
+    }
+    
+    .mental-health .helpline .helpline-image {
+        width: 100%;
+    }
+}

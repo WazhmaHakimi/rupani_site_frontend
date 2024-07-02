@@ -1,0 +1,10 @@
+/* MultipleImagesSlideShow.css */
+.slick-prev:before,
+.slick-next:before {
+  color:  var(--main-color) !important;
+  font-size: 25px !important;
+}
+
+img.card-img-top {
+  height: 190px;
+}

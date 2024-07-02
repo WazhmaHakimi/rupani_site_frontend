@@ -1,0 +1,165 @@
+.about-us {
+    background-color: #f1f7f4;
+}
+
+.about-us .banner img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us .about-us-content {
+    padding: 0 10%;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.about-us .about-us-content .gray-text {
+    width: 75%;
+}
+
+.about-us .about-us-content .about-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.about-us .about-us-content .about-row .about-us-text, 
+.about-us .about-us-content .about-row .about-us-image {
+    height: 100%;
+}
+
+.about-us .about-us-content .about-row .about-us-text {
+    width: 60%;
+}
+
+.about-us .about-us-content .about-row .about-us-image {
+    width: 36%;
+    margin-left: 4%;
+}
+
+.about-us .about-us-content .about-row img {
+    width: 95%;
+    margin: 0 0 0 5% !important;
+    height: 240px;
+}
+
+@media (max-width: 768px){
+    .about-us .about-us-content img {
+        height: auto !important;
+        width: 100%;  
+        margin: 0 !important;  
+    }
+
+    .about-us .about-us-content {
+        padding: 0 5% !important;
+        width: 100%;
+    }
+
+    .about-us .about-us-content .gray-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .about-us .about-us-content .about-row {
+        flex-direction: column;
+    }
+    .about-us .about-us-content .about-row .about-us-text {
+        width: 100%;
+    }
+    
+    .about-us .about-us-content .about-row .about-us-image {
+        width: 100%;
+    margin-left: 0%;
+    }
+
+    .thematic-area-row {
+        flex-direction: column !important;
+    }
+
+    .thematic-area-image {
+        width: 100% !important;
+    }
+    
+    .thematic-area-text {
+        width: 100% !important;
+    }
+
+    .statistic-row {
+        flex-direction: column !important;
+        width: 90% !important;
+        margin: 0 5% !important;
+    }
+
+    .statistic-row .statistic-data {
+        width: 55% !important;
+        padding: 10px 0 !important;
+    }
+}
+.thematic-area-row {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.thematic-area-text span {
+    color: rgb(0 109 54);
+}
+
+.thematic-area-image {
+    width: 30%;
+    margin: 0;
+}
+
+.thematic-area-image img {
+    width: 100%;
+}
+
+.thematic-area-text {
+    width: 64%;
+}
+
+.statistic-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../Images/howWeAre-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.statistic-row .statistic-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 15px;
+    width: 18%;
+}
+
+.statistic-row .statistic-data img {
+    width: 50px;
+    height: auto;
+}
+
+.statistic-row .statistic-data h2 {
+    font-size: 35px !important;
+    font-weight: 700;
+    margin: 10px 0 !important;
+}
+
+.statistic-row .statistic-data p {
+    font-size: 15px !important;
+}

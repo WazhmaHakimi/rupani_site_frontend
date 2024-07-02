@@ -1,0 +1,115 @@
+.economic-inclusion {
+    background-color: var(--bg-color);
+}
+.economic-inclusion-box {
+    padding: 0 10%;
+}
+
+@media(max-width: 767px) {
+    .economic-inclusion-box {
+        background-color: var(--bg-color);
+        padding: 0 5%;
+    }
+}
+
+.economic-inclusion-box .flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.economic-inclusion-box .flex-box .economic-inclusion-text {
+    width: 55%;
+}
+
+.economic-inclusion-box .flex-box .economic-inclusion-image {
+    width: 42%;
+}
+
+.economic-inclusion-box .flex-box .economic-inclusion-image img {
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .economic-inclusion-box .flex-box, 
+    .economic-inclusion-box .flex-box.reverse {
+        flex-direction: column !important;
+    }
+    
+    .economic-inclusion-box .flex-box .economic-inclusion-text {
+        width: 100%;
+    }
+    
+    .economic-inclusion-box .flex-box .economic-inclusion-image {
+        width: 100%;
+    }
+}
+
+.economic-inclusion-box .second-flex-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.economic-inclusion-box .second-flex-box .economic-inclusion-text {
+    width: 65%;
+}
+
+.economic-inclusion-box .second-flex-box .economic-inclusion-image {
+    width: 33%;
+}
+
+.economic-inclusion-box .second-flex-box .economic-inclusion-image img {
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .economic-inclusion-box .second-flex-box {
+        flex-direction: column;
+    }
+    
+    .economic-inclusion-box .second-flex-box .economic-inclusion-text {
+        width: 100%;
+    }
+    
+    .economic-inclusion-box .second-flex-box .economic-inclusion-image {
+        width: 100%;
+    }
+}
+
+.economic-inclusion-box .flex-box.reverse {
+    flex-direction: row-reverse;
+}
+
+.economic-inclusion-box .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.economic-inclusion-box .grid-cards img {
+    width: 80%;
+}
+
+@media(max-width: 768px) and (min-width: 426px) {
+    .economic-inclusion-box {
+        padding: 0 5%;
+    }
+
+    .economic-inclusion-box .grid-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 426px)  {
+    .economic-inclusion-box {
+        padding: 0 5%;
+    }
+
+    .economic-inclusion-box .grid-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+

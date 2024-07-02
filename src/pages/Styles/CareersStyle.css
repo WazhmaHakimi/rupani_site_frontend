@@ -1,0 +1,34 @@
+.careers {
+    background-color: var(--bg-color);
+    padding: 0 10%;
+}
+
+.careers .flex-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0 2rem;
+}
+
+.careers .flex-box .flex-item{
+    width: 30%;
+}
+
+.careers .flex-box .flex-item img{
+    width: 100%;
+}
+
+@media(max-width: 768px) and (min-width: 426px) {    
+    .careers .flex-box .flex-item{
+        width: 45%;
+    }
+}
+
+@media(max-width: 426px) {    
+    .careers .flex-box .flex-item{
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+.where-we-work {
+    background-color: #f1f7f4;
+}
+
+.where-we-work img {
+    width: 80%;
+    height: auto;
+    transform: none;
+}
+
+.where-we-work img:hover {
+    transform: scale(1.4);
+    margin: 100px 0;
+}
