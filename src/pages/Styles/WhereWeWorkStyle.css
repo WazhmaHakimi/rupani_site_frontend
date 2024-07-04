@@ -2,13 +2,23 @@
     background-color: #f1f7f4;
 }
 
-.where-we-work img {
+.where-we-work p img {
+    width: 50% !important;
+    height: 400px;
+}
+
+.where-we-work img.map_image {
     width: 80%;
     height: auto;
     transform: none;
 }
 
-.where-we-work img:hover {
+.where-we-work .map {
+    width: 100%;
+    text-align: center;
+}
+
+.where-we-work img.map_image:hover {
     transform: scale(1.4);
     margin: 100px 0;
 }

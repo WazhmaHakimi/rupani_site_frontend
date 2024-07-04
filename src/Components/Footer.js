@@ -30,7 +30,7 @@ function Footer() {
                 <div className='social-icons'>
                     <h5 className='text-center'>Follow Us</h5>
                     <div className='d-flex gap-2 flex-column'>
-                        <div className='d-flex gap-2 justify-content-around align-items-center mt-5'>
+                        <div className='d-flex gap-1 justify-content-around align-items-center mt-5'>
                             <a href='#'>
                                 <img src={Facebook} width='28' />
                             </a>
