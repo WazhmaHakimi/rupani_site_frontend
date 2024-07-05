@@ -65,7 +65,11 @@
 
 .card img {
   width: 100%;
-  border: none
+  border: none;
+}
+
+.about-cards .card img {
+  border-radius: 20px;
 }
 
 .intro {

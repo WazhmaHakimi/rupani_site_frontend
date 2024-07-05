@@ -18,8 +18,9 @@ import DocumentTitle from '../Components/DocumentTitle';
 import axios from 'axios'
 
 export default function Home() {
-  const [sliders, setSliders] = useState([]);
-  const [sliderSetting, setSliderSetting] = useState({});
+  const [sliders, setSliders] = useState([])
+  const [sliderSetting, setSliderSetting] = useState({})
+  const [whatWeDoCategory, setWhatWeDoCategory] = useState([])
   DocumentTitle('Home');
 
   useEffect(() => {
@@ -31,9 +32,17 @@ export default function Home() {
         console.log(err)
       })
 
-      axios.get('http://127.0.0.1:8000/api/sliderSetting')
+    axios.get('http://127.0.0.1:8000/api/sliderSetting')
       .then(res => {
         setSliderSetting(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+
+    axios.get('http://127.0.0.1:8000/api/whatWeDoCategory')
+      .then(res => {
+        setWhatWeDoCategory(res.data)
       })
       .catch(err => {
         console.log(err)
@@ -42,7 +51,7 @@ export default function Home() {
 
   return (
     <Box className='content' style={{ display: 'block', width: '100%' }}>
-      <div className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval={ sliderSetting.interval } data-bs-wrap="true" data-bs-pause="false">
+      <div className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval={sliderSetting.interval} data-bs-wrap="true" data-bs-pause="false">
         <div className="carousel-inner">
           {
             sliders.map(slider =>
@@ -52,7 +61,7 @@ export default function Home() {
             )
           }
         </div>
-        <span className="carousel-text-overlay">{ sliderSetting.slider_text }</span>
+        <span className="carousel-text-overlay">{sliderSetting.slider_text}</span>
       </div>
 
 
@@ -72,97 +81,27 @@ export default function Home() {
             </div>
 
             <div className='row about-cards'>
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 px-0 ">
-                <div className="card">
-                  <a href="Earlychildhood">
-                    <img
-                      src={WhoWeAre1}
-                      alt=""
-                    />
+              {
+                whatWeDoCategory.map(item =>
+                  <div className="col-lg-4 col-md-6 col-sm-6 col-12 px-0 ">
 
-                    <div className='intro text-uppercase'>
-                      <h6>Early Childhood development</h6>
-                    </div>
-                  </a>
-                </div>
-              </div>
+                    <div className="card">
+                      <a href={item.slug}>
+                        <img
+                          src={`http://127.0.0.1:8000/${item.image}`}
+                          alt={item.image_alt}
+                          height='190'
+                        />
 
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 px-0 ">
-                <div className="card">
-                  <a href="Education">
-                    <img
-                      src={WhoWeAre2}
-                      alt=""
-                    />
-
-                    <div className='intro text-uppercase'>
-                      <h6>Education</h6>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 px-0 ">
-                <div className="card">
-                  <a href="Economicinclusion">
-                    <img
-                      src={WhoWeAre3}
-                      alt=""
-                    />
-
-                    <div className='intro text-uppercase'>
-                      <h6>Economic Inclusion</h6>
-                    </div>
-                  </a>
-
-
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 px-0 ">
-                <div className="card">
-                  <a href="Mentalhealth">
-                    <img
-                      src={WhoWeAre4}
-                      alt=""
-                    />
-
-                    <div className='intro text-uppercase'>
-                      <h6>Mental Health</h6>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 px-0 ">
-                <div className="card">
-                  <a href="Nresource">
-                    <img
-                      src={WhoWeAre5}
-                      alt=""
-                    />
-
-                    <div className='intro text-uppercase'>
-                      <h6>Natural Resources Management</h6>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 px-0 ">
-                <a href='Humanitarian'>
-                  <div className="card">
-                    <img
-                      src={WhoWeAre6}
-                      alt=""
-                    />
-                    <div className='intro text-uppercase'>
-                      <h6>Humanitarian Assistance</h6>
+                        <div className='intro text-uppercase'>
+                          <h6>{item.name}</h6>
+                        </div>
+                      </a>
                     </div>
                   </div>
-                </a>
 
-              </div>
+                )
+              }
             </div>
           </div>
 
