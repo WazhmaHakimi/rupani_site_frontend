@@ -70,12 +70,13 @@
 
 .about-cards .card img {
   border-radius: 20px;
+  filter: brightness(0.5);
 }
 
-.intro {
-  height: 40px;
+.about-cards .intro {
+  height: 45px;
   width: 100%;
-  padding: 6px;
+  padding: 10px 2px;
   box-sizing: border-box;
   position: absolute;
   background-color: rgba(96, 96, 92, 0.5);
@@ -87,6 +88,11 @@
   text-align: center;
   transition: .4s;
   border-radius: 0 0 20px 20px;
+}
+
+.about-cards .intro h6 {
+  font-size: 13px !important;
+  font-weight: 600;
 }
 
 .card:hover {

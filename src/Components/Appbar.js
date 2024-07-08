@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Chip, Grid, Stack } from '@mui/material'
 import './Styles/Styles.css'
 import Logo from './Styles/Images/rupani-logo-n.63b9ead7.png'
@@ -8,9 +8,22 @@ import X from './Styles/Images/xlogo.svg'
 import Youtube from './Styles/Images/music-icon.svg'
 import Insta from './Styles/Images/insagram-icon.svg'
 import { useLocation } from 'react-router-dom';
+import axios from 'axios'
 
 function Appbar() {
     const location = useLocation();
+
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/categories')
+            .then(res => {
+                setCategories(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [])
 
     return (
         <Box className="fixed-top fixed-navbar">
@@ -143,7 +156,7 @@ function Appbar() {
                                 >
                                     <li>
                                         <a
-                                           className={`dropdown-item ${location.pathname === '/Aboutus' ? ' active' : ''}`}
+                                            className={`dropdown-item ${location.pathname === '/Aboutus' ? ' active' : ''}`}
                                             href="Aboutus"
                                         >
                                             About Us
@@ -207,55 +220,19 @@ function Appbar() {
                                 <ul
                                     className="dropdown-menu"
                                     data-animations="fadeInDown fadeInLeft fadeInUp fadeInRight"
-                                >
-                                    <li>
-                                        <a
-                                            className={`dropdown-item ${location.pathname === '/Earlychildhood' ? ' active' : ''}`}
-                                            href="Earlychildhood"
-                                        >
-                                            Early Childhood Development
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className={`dropdown-item ${location.pathname === '/Education' ? ' active' : ''}`}
-                                            href="Education"
-                                        >
-                                            Education
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className={`dropdown-item ${location.pathname === '/Economicinclusion' ? ' active' : ''}`}
-                                            href="Economicinclusion"
-                                        >
-                                            Economic Inclusion
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className={`dropdown-item ${location.pathname === '/Mentalhealth' ? ' active' : ''}`}
-                                            href="Mentalhealth"
-                                        >
-                                            Mental Health
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className={`dropdown-item ${location.pathname === '/Nresource' ? ' active' : ''}`}
-                                            href="Nresource"
-                                        >
-                                            Natural Resource Management
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className={`dropdown-item ${location.pathname === '/Humanitarian' ? ' active' : ''}`}
-                                            href="Humanitarian"
-                                        >
-                                            Humanitarian Assistance
-                                        </a>
-                                    </li>
+                                >   {
+                                        categories.map(item =>
+                                            <li>
+                                                <a
+                                                style={{ textWrap: 'wrap'}}
+                                                    className={`dropdown-item ${location.pathname === `/${item.slug}` ? ' active' : ''}`}
+                                                    href={item.slug}
+                                                >
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        )
+                                    }
                                 </ul>
                             </li>
                             <li className="nav-item">
@@ -328,7 +305,7 @@ function Appbar() {
                                             className={`dropdown-item ${location.pathname === '/Careers' ? ' active' : ''}`}
                                             href="Careers"
                                         >
-                                            
+
                                             Careers
                                         </a>
                                     </li>

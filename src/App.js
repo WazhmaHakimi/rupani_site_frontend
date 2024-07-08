@@ -26,6 +26,7 @@ import Gallery from './pages/Gallery';
 import Newsinfo from './pages/Newsinfo';
 import ReportsAndData from './pages/ReportsAndData';
 import EconomicInclusion from './pages/EconomicInclusion';
+import WhatWeDo from './pages/WhatWeDo';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
           <Route path='/Newsinfo' element={<Newsinfo />} />
           <Route path='/Reportsanddata' element={<ReportsAndData />} />
           <Route path='/Economicinclusion' element={<EconomicInclusion />} />
+          <Route path='/:slug' element={<WhatWeDo />} />
         </Routes>
       </Router>
       <Footer />
