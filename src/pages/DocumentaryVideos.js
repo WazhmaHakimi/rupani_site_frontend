@@ -21,7 +21,7 @@ function DocumentaryVideos() {
 
     return (
         <div className='documentary-videos content'>
-            <h2 className='text-uppercase yellow-text text-center py-2'>
+            <h2 className='text-uppercase yellow-text text-center py-5'>
                 Documentary - Videos
             </h2>
 
@@ -29,7 +29,7 @@ function DocumentaryVideos() {
                 {
                     videos.map(item =>
                         <div className='grid-item'>
-                            <a href={item.video_link}>
+                            <a href={item.video_link} target='_blank'>
                                 <img src={`http://127.0.0.1:8000/${item.image}`} />
                             </a>
                             <p className='fw-semibold pt-3 px-3'>

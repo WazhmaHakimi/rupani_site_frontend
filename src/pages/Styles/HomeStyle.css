@@ -12,7 +12,7 @@
   font-weight: 600;
   text-align: left;
   z-index: 1;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .carousel-caption {
@@ -279,4 +279,27 @@
 .subscribe input:focus {
   outline: none;
   outline: 2px solid var(--main-color);
+}
+
+/* RF Footprint */
+
+.footprint .grid-box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url('../Images/footprint.jpg');
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 3rem 2rem;
+  gap: 1.5rem;
+  backdrop-filter: brightness(0.5);
+}
+
+.footprint .grid-box img {
+  width: 80px;
+  height: 70px;
+  filter: brightness();
+}
+
+@media (max-width: 768px) {
+  .footprint .grid-box {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }

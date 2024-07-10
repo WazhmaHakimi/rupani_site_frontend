@@ -73,15 +73,15 @@ function Appbar() {
                                 pb: '.5rem',
                             }}
                         >
-                            <a href='#'>
+                            <a href='https://www.facebook.com/p/Rupani-Foundation-Afghanistan-100064865434093/?locale=ro_RO'>
                                 <img src={Facebook} width="20" />
                             </a>
 
-                            <a href='#'>
+                            <a href=''>
                                 <img src={Linkdin} width="20" />
                             </a>
 
-                            <a href='#'>
+                            <a href='https://twitter.com/rfafghanistan?lang=en'>
                                 <img src={X} width="20" />
                             </a>
 
@@ -117,7 +117,7 @@ function Appbar() {
                         <span className="navbar-toggler-icon" />
                     </button>
                     <div className='right-donate-btn'>
-                        <a href='/' className='btn-yellow'>Donate</a>
+                        <a href='https://www.globalgiving.org/projects/wecare-informed-parenting-project-37/?utm_medium=email&utm_campaign=project-approved&utm_content=Your+project+has+been+approved!&utm_source=email2.globalgiving.org' className='btn-yellow'>Donate</a>
                     </div>
                     <div
                         className="collapse navbar-collapse"
@@ -164,7 +164,7 @@ function Appbar() {
                                     </li>
                                     <li>
                                         <a
-                                            className={`dropdown-item ${location.pathname === '/Missionandvalue' ? ' active' : ''}`}
+                                            className={`dropdown-item ${location.pathname === '/MissionStatement' ? ' active' : ''}`}
                                             href="MissionStatement"
                                         >
                                             Mission Statement
@@ -324,7 +324,7 @@ function Appbar() {
                                 </a>
                             </li>
                         </ul>
-                        <a href='/' className='btn-yellow hide-donate'>Donate</a>
+                        <a href='https://www.globalgiving.org/projects/wecare-informed-parenting-project-37/?utm_medium=email&utm_campaign=project-approved&utm_content=Your+project+has+been+approved!&utm_source=email2.globalgiving.org' className='btn-yellow hide-donate'>Donate</a>
 
                         <div className="input-group search-bar">
                             <input type="text" className="form-control" placeholder="Search..." />
@@ -340,19 +340,6 @@ function Appbar() {
                     </div>
                 </div>
             </nav>
-
-            {/* <Grid
-                container
-                sx={{
-                    p: 4
-                }}
-            >
-                <Grid item md={12}>
-                    <Grid item md={10}>
-                        <a href='/' className='btn-yellow'>Donate</a>
-                    </Grid>
-                </Grid>
-            </Grid> */}
         </Box>
     )
 }

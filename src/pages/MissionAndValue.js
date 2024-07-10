@@ -1,9 +1,9 @@
 import React from 'react'
-import Banner from './Images/Rectangle754.png'
+import Banner from './Images/mission.jpg'
 import Vision from './Images/Vission-icon.svg'
 import Mission from './Images/mission-icon.svg'
 import Value from './Images/values-icon.svg'
-import VisionMissionValue from './Images/visionandMiss.png'
+import VisionMissionValue from './Images/mission1.jpg'
 import './Styles/MissionAndValueStyle.css'
 import DocumentTitle from '../Components/DocumentTitle'
 

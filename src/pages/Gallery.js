@@ -22,7 +22,7 @@ function Gallery() {
 
     return (
         <div className='gallery content'>
-            <h2 className='text-uppercase text-center yellow-text pt-3'>
+            <h2 className='text-uppercase text-center yellow-text pt-5 pb-3'>
                 Photo Gallery
             </h2>
             <div className='grid-cards pb-5 pt-3'>

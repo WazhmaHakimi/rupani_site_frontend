@@ -16,6 +16,7 @@
 
 .documentary-videos .grid-cards .grid-item img {
     width: 100%;
+    filter: brightness(0.5);
 }
 
 @media(max-width: 768px) and (min-width: 426px) {

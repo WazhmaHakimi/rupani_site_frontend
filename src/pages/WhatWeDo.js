@@ -27,16 +27,16 @@ function WhatWeDo(props) {
         <div>
             {
                 whatWeDo.map(item =>
-                    < div className='natural-resource content'>
+                    <div className='what-we-do content'>
 
                         <div className='banner'>
-                            <img height={500} src={`http://127.0.0.1:8000/${item.starter_image}`} />
+                            <img src={`http://127.0.0.1:8000/${item.starter_image}`} />
 
                             <div className='intro-text'>
                                 <p className='text-center text-white'>{item.starter_text}</p>
                             </div>
                         </div>
-                        <div className='natural-resource-data pb-5'>
+                        <div className='what-we-do-data pb-5'>
                             <h2 className='yellow-text text-center text-uppercase'>{item.title}</h2>
                             
                             <div dangerouslySetInnerHTML={{ __html: item.content }} />

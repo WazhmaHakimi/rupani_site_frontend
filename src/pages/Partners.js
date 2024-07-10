@@ -57,7 +57,7 @@ function Partners() {
                     {
                         partners.map(item =>
                             <div className='partner-logo'>
-                                <a href={item.link}>
+                                <a href={item.link} target='_blank'>
                                     <img src={'http://127.0.0.1:8000/' + item.image} />
                                 </a>
                             </div>

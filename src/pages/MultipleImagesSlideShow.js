@@ -3,12 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Styles/MultipleImagesSlideShow.css';
-import WhatsNew1 from './Images/1709284555.png'
-import WhatsNew2 from './Images/1709284585.png'
-import WhatsNew3 from './Images/1709284612.png'
-import WhatsNew4 from './Images/1709284642.png'
-import WhatsNew5 from './Images/1709284673.png'
-import WhatsNew6 from './Images/1711685629.jpg'
 import axios from "axios";
 
 function MultipleImagesSlideShow() {
@@ -118,7 +112,8 @@ function MultipleImagesSlideShow() {
                                 <div className="card-body">
                                     <p className='date'>{item.date}</p>
                                     <p className="card-text">
-                                        {item.content}
+                                    {item.content.slice(0, 80)}
+                                    {item.content.length > 80 && '...'}
                                     </p>
                                     <a href="Pressreleaseapi" className="btn-yellow text-capitalize">
                                         Read More

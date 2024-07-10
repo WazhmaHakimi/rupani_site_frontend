@@ -15,7 +15,7 @@
     height: 100%;
     width: 100%; /* This will make 4 elements per row */
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 @media (width : 768px){
@@ -52,7 +52,7 @@
 
 .team-data img {
     width: 95%;
-    height: 200px;
+    height: 180px;
     margin: 0 auto;
 }
 

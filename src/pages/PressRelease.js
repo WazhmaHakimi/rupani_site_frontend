@@ -30,7 +30,7 @@ function PressRelease() {
 
   return (
     <div className='press-release content'>
-      <h2 className='yellow-text text-center text-uppercase pt-3'>PRESS RELEASES</h2>
+      <h2 className='yellow-text text-center text-uppercase pt-5'>PRESS RELEASES</h2>
       <div className='press-cards pb-5'>
         {
           pressRelease.map(item =>

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Box } from '@mui/material'
-import SliderOne from './Images/Rectangle1.png'
-import SliderTwo from './Images/Rectangle2.png'
-import SliderThree from './Images/Rectangle3.png'
-import SliderFour from './Images/Rectangle4.png'
-import WhoWeAre1 from './Images/woWeAre-1.png'
-import WhoWeAre2 from './Images/woWeAre-2.png'
-import WhoWeAre3 from './Images/woWeAre-3.png'
-import WhoWeAre4 from './Images/woWeAre-4.png'
-import WhoWeAre5 from './Images/woWeAre-5.png'
-import WhoWeAre6 from './Images/woWeAre-6.png'
+import FootPrint1 from './Images/Picture1.svg'
+import FootPrint2 from './Images/Picture2.svg'
+import FootPrint3 from './Images/Picture3.svg'
+import FootPrint4 from './Images/Picture4.svg'
+import FootPrint5 from './Images/Picture5.svg'
+import FootPrint6 from './Images/Picture6.svg'
+import FootPrint7 from './Images/Picture7.svg'
+import FootPrint8 from './Images/Picture8.svg'
+import FootPrint9 from './Images/Picture9.svg'
+import FootPrint10 from './Images/Picture10.svg'
 import KeepUp from './Images/keepUp.svg'
 import MultipleImagesSlideShow from './MultipleImagesSlideShow';
 import './Styles/HomeStyle.css'
@@ -56,7 +56,7 @@ export default function Home() {
           {
             sliders.map(slider =>
               <div className="carousel-item active">
-                <img src={'http://127.0.0.1:8000/' + slider.image} height={550} className="d-block w-100" alt={slider.image_alt} />
+                <img src={'http://127.0.0.1:8000/' + slider.image} className="d-block w-100" alt={slider.image_alt} />
               </div>
             )
           }
@@ -69,7 +69,7 @@ export default function Home() {
         <div className='container index-body py-4'>
           <div className='row'>
             <p className='about-text font-poppins font-normal font-400 text-center'>
-              Rupani Foundation Pakistan is implementing innovative, community-driven development solutions to respond to development challenges for over 16 years, reaching out to vulnerable populations in Pakistan, irrespective of their race, religion, ethnicity, or gender. The goal of the Foundation is to consolidate the needed human, financial and technical resources to help the poorest and most marginalized in target geographies, especially women and girls, such that they achieve a level of self-reliance and positive change in their wellbeing...
+              Rupani Foundation Afghanistan is implementing innovative, community-driven development solutions to respond to development challenges for over 16 years, reaching out to vulnerable populations in Afghanistan, irrespective of their race, religion, ethnicity, or gender. The goal of the Foundation is to consolidate the needed human, financial and technical resources to help the poorest and most marginalized in target geographies, especially women and girls, such that they achieve a level of self-reliance and positive change in their wellbeing...
               <a href='Aboutus' className='yellow-link'>Read More</a>
             </p>
           </div>
@@ -106,6 +106,102 @@ export default function Home() {
           </div>
 
           <MultipleImagesSlideShow />
+
+          <div className='py-3 footprint'>
+            <h2 className='yellow-text text-center pt-5'>RF FOOTPRINTS IN AFGHANISTAN
+            </h2>
+            <div className='grid-box'>
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint1} />
+                </div>
+                <p className='fw-bold'>
+                  Incorporated  2008
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint2} />
+                </div>
+                <p className='fw-bold'>
+                  Presence 3 provinces
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint3} />
+                </div>
+                <p className='fw-bold'>
+                  People trained 8000+
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint4} />
+                </div>
+                <p className='fw-bold'>
+                  Business enterprises established 470 +
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint5} />
+                </div>
+                <p className='fw-bold'>
+                  Non–fruit trees planted 20.4 million +
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint6} />
+                </div>
+                <p className='fw-bold'>
+                  Fruit trees planted 0.5 million +
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint7} />
+                </div>
+                <p className='fw-bold'>
+                  Irrigation & DRR infrastructure built  500km +
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint8} />
+                </div>
+                <p className='fw-bold'>
+                  Landscape restored  5000+ hectares
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint9} />
+                </div>
+                <p className='fw-bold'>
+                  Students reached through  ECD  3700
+                </p>
+              </div>
+
+              <div className='grid-items'>
+                <div>
+                  <img src={FootPrint10} />
+                </div>
+                <p className='fw-bold'>
+                  Beneficiaries reached 0.5 million +
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div className='row pt-5 pb-5'>
             <div className="col-12">
